@@ -2,8 +2,21 @@
 import { Form, Input} from 'antd'
 import style from './style.module.scss'
 import { useState, useEffect } from 'react';
+interface UserData {
+    id: number;
+    firstName: string;
+    email: string;
+    age: number;
+    contactNumber: string;
+    address: string;
+    imageUrl: string;
+    dob: string;
+    salary: number;
+    // Add other properties as needed
+  }
 
 const about = () => {
+
     const [data, setData] = useState([]);
     const [loading, setLoading] = useState(true);
     const apidata = 'https://hub.dummyapis.com/employee?noofRecords=10&idStarts=1001';
@@ -76,13 +89,7 @@ const about = () => {
                     <Input type="text" value={item.dob}  /><br />
 
                     <label>Salary :</label><br />
-                    <Input type="text" value={item.salary}  /><br /><br />
-
-
-                    {/* <label>Body :</label><br />
-                    <TextArea showCount maxLength={100} className={style.TextAreaDiv} value={item.body} style={{ height: 120, resize: 'none',color:'black' }}/><br /><br />
-            */}
-            
+                    <Input type="text" value={item.salary}  /><br /><br />           
 
                     <Input type="submit" value="Update" />
 
@@ -90,7 +97,10 @@ const about = () => {
                 
                     </Form>
                 </div>
-        )))}
+        )
+        )
+        )
+        }
 
 
             </div>
