@@ -41,7 +41,7 @@ useEffect(() => {
 
     fetchData();
   }, []);
-  console.log("------------------",data)
+//   console.log("------------------",data)
   
 
   return (
@@ -80,6 +80,9 @@ useEffect(() => {
 
             <label>Image Url :</label><br />
             <Input type="text" value={item.imageUrl}  /><br />
+
+            <label>Date :</label><br />
+            <Input type="text" value={item.dob}  /><br />
 
             <label>Salary :</label><br />
             <Input type="text" value={item.salary}  /><br /><br />

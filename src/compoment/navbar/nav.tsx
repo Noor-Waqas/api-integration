@@ -11,7 +11,7 @@ const nav = () => {
             <li><a>Home</a></li>
             <li><a>About</a></li>
             <li><a>Contect</a></li>
-            <Button>Login</Button>
+            <li><Button className={style.loginButton}>Login</Button></li>
         </ul>
     </div>
     </div>
