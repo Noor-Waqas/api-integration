@@ -10,7 +10,9 @@
 
      .Logo{
             margin-left: 10px;
-        }
+            @media only screen and (max-width: 458px) {        
+                font-size: 16px;
+        }}
 
     .UlDesin{
     display: flex;
@@ -18,6 +20,9 @@
     list-style: none;
     font-size: 24px;
     margin-right: 14px;
+    @media only screen and (max-width: 458px) {        
+        font-size: 15px;
+  }
     .UlDesin ,ul ,li:hover{
         background-color: aqua;
         color:black;
@@ -28,4 +33,12 @@
         text-align: center;
     }
     }
+    @media only screen and (max-width: 345px) {        
+        .loginButton{
+            font-size: 10px;
+            height: 26px;
+            padding: 1px 9px;
+            font-weight: 700;
+        }
+  }
 }
