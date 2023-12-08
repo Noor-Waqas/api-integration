@@ -9,9 +9,30 @@ const signUp = () => {
         email:"",
         password:"",
     })
-
+    const data =[
+        {
+        id:1,
+        name:"khawar",
+        phone:112233,
+        age:"21year",
+        address:"green town",
+        email:"wali@gmail.com",
+        password:"112233"
+       },
+       {
+        id:2,
+        name:"abbas",
+        phone:11233,
+        age:"215year",
+        address:"town town",
+        email:"abbas@gmail.com",
+        password:"11233"
+      }
+    ]
+    
+    console.log(data)
    const onChangeHandle=(target)=>{
-    console.log("==============>",target)
+
     setuserdata((data)=>{
         return {
             ...data,
@@ -21,11 +42,15 @@ const signUp = () => {
    }
 
   return (
-    <>
+    <> 
+
+        
+    
+  
             <div>
                 <h1 style={{display:"flex",justifyContent:"center"}}>SIGN UP</h1> 
             </div>
-        <div style={{display:"flex",justifyContent:"center",marginTop:"1rem"}}>
+         <div style={{display:"flex",justifyContent:"center",marginTop:"1rem"}}>
             <form >
                     <label >Username:</label><br/>
                     <input type="text" name="name" value={userdata.name} onChange={(e) => onChangeHandle(e.target)} /><br/>
@@ -41,7 +66,8 @@ const signUp = () => {
                     <input type="password" name="password" value={userdata.password} onChange={(e) => onChangeHandle(e.target)} /><br/><br/>
                     <button type="submit">Sign Up</button>
             </form>
-        </div>
+       
+     </div>
 
     </>
   )
