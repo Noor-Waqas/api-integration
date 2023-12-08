@@ -17,7 +17,7 @@ interface UserData {
 
 const about = () => {
 
-    const [data, setData] = useState([]);
+    const [data, setData] = useState <UserData[]> ([]);
     const [loading, setLoading] = useState(true);
     const apidata = 'https://hub.dummyapis.com/employee?noofRecords=10&idStarts=1001';
     const fetchData = async () => {
