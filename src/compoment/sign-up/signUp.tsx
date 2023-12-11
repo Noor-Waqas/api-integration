@@ -13,10 +13,6 @@ const signUp = () => {
     const onChangeHandle = (target: HTMLInputElement) =>   setuserdata( prevState =>   ({ ...prevState, [target.name]: target.value})) 
     const SignUpHandler = async () => {
         const response = await  axios.post("google.com/api/call", userdata)
-    //   const respinse = {
-    //         status: true,
-    //         message: "Signup Success "
-    //     }
         if(response.status){
             // redirect to login
         }else {
