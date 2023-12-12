@@ -23,6 +23,11 @@
     @media only screen and (max-width: 458px) {        
         font-size: 12px;
   }
+  ul ,li ,a{
+    text-decoration: none;
+    color: white;
+
+  }
     .UlDesin ,ul ,li:hover{
         background-color: aqua;
         color:black;
