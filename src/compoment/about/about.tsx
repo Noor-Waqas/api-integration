@@ -20,6 +20,8 @@ const about = () => {
     const [data, setData] = useState <UserData[]> ([]);
     const [loading, setLoading] = useState(true);
     const apidata = 'https://hub.dummyapis.com/employee?noofRecords=10&idStarts=1001';
+    // const apidata = 'https://645f31759d35038e2d1e99e2.mockapi.io/crud';
+
     const fetchData = async () => {
         console.log(" fetchData Start ----- ")
 

@@ -12,7 +12,7 @@ const postApi = () => {
     })
     const onChangeHandle = (target: HTMLInputElement) =>   setuserdata( prevState => ({ ...prevState, [target.name]: target.value})) 
     
-    const OnsubmitHandle = async (e) => {
+    const OnsubmitHandle = async (e:any) => {
         e.preventDefault();
         try {
             const response = await  axios.post("https://645f31759d35038e2d1e99e2.mockapi.io/crud", userdata)
