@@ -1,5 +1,6 @@
 import { Button } from 'antd'
 import style from './style.module.scss'
+import { Link } from 'react-router-dom';
 const nav = () => {
   return (
   <>
@@ -8,9 +9,9 @@ const nav = () => {
     <div><h1 className={style.Logo}>Shadow</h1></div>
     <div>
         <ul className={style.UlDesin}>
-            <li><a>Home</a></li>
-            <li><a>About</a></li>
-            <li><a>Contect</a></li>
+           <li><a> <Link to="/fetch">Fetch</Link></a></li>
+            <li><a> <Link to="/post">Post</Link></a></li>
+            <li><a> <Link to="/delete">Delete</Link></a></li>
           <Button className={style.loginButton}>Login</Button>
         </ul>
     </div>
